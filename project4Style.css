@@ -1,0 +1,236 @@
+ body{
+ 	
+	color: #000305;
+	background-color: #BBB;
+	font-size: 87.5%; /*Base font size is 14px*/
+	font-family: 'Ubuntu', Open Sans;
+	text-align: justify;
+	line-height: 1.5;
+}
+
+a{
+	text-decoration: none;
+	transition: background 1s, transform 0.3s;
+}
+
+a:link, a:visited{
+	color: #9C33FF;
+	transform: rotate(360deg);
+	
+}
+
+
+
+a:hover, a:active{
+	background-color: salmon;
+	color: #FFF;
+	
+}
+
+.title{
+	animation-name: drive;
+	animation-duration: 3s;
+	animation-fill-mode: both;
+	animation-delay: 0.5s;
+	animation-timing-function: cubic-bezier(0,.77,1,.28);
+}
+
+
+.body{
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
+	text-align: justify;
+}
+
+@keyframes drive{
+	from {transform: translateX(500px);}
+	to {transform: translateX(200px);}
+}
+
+#myHeader{
+	margin-top: 0px;
+	padding-left: 170px;
+
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.shine{
+	padding-top: 10px;
+	padding-left: 2px;
+	animation-name: bounceIn;
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	animation-delay: 0.5s;
+	animation-iteration-count: 20;
+}
+
+.mainContent {
+	line-height: 25px;	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+
+.post-info{
+	font-style: italic;
+	color: #999;
+	font-size: 90%;
+
+}
+
+
+.mainFooter{
+	width: 100%;
+	float: left;
+	height: 40px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #666;
+	margin: 2% 0 2% 0;
+}
+
+.mainFooter p{
+	width: 92%;
+	margin: 10px auto;
+	color: #FFF;
+}
+
+
+h3 {
+font-family: Verdana;
+color: #8B008B;
+}
+
+h4 {
+font-family: Verdana;
+color: #000;
+}
+
+.left {
+   float: left;
+   padding: 0 20px 20px 0;
+}
+
+.call-outs-container {
+  max-width: 1400px;
+  margin: 20px auto 0 auto;
+}
+
+.call-out {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 50%;
+}
+
+@media (min-width: 900px) {
+  .call-outs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.call-out:nth-child(1) {background-color: #c0dbe2;}
+.call-out:nth-child(2) {background-color: #cdf1c3;}
+.call-out:nth-child(3) {background-color: #ccb9da;}
+
+@media only screen and (min-width: 150px) and (max-width: 600px){
+
+		.body{
+			width: 90%;
+			font-size: 95%;
+		}
+
+		.mainHeader img{
+			width: 100%;
+		}
+
+		.mainHeader nav{
+			height: 160px;
+		}
+
+		.mainHeader nav ul{
+			padding-left: 0;
+		} 
+
+		.mainHeader nav ul li{
+			width: 100%;
+			text-align: center;
+		}
+
+
+		.mainHeader nav a:link, .mainHeader nav a:visited{
+			padding: 10px 25px;
+			height: 20px;
+			display: block;
+		}
+
+
+		.content{
+			width: 100%;
+			float: left;
+			margin-top: 2%;
+
+		}
+
+		.post-info{
+			display: none;
+		}
+
+		.topcontent{
+			background-color: #FFF;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			padding: 3% 5%;
+			margin: 3%;
+		}
+
+
+		.post-info{
+			font-style: italic;
+			color: #999;
+			font-size: 90%;
+
+		}
+
+		.top-sidebar, .middle-sidebar, .bottom-sidebar{
+			width: 97%;
+			margin: 2% 0 2% 0;
+			padding: 2% 3%;
+		}	
+		.mainFooter{
+			width: 100%;
+			float: left;
+			height: 40px;
+			border-radius: 5px;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			background-color: #666;
+			margin: 2% 0 2% 0;
+		}
+
+		.mainFooter p{
+			width: 92%;
+			margin: 10px auto;
+			color: #FFF;
+		}
+
+
+}
